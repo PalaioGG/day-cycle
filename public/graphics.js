@@ -38,7 +38,6 @@ function setup() {
 		high[i] = map(noise(i), 0, 1, -0.3, 0.1)
 		// step[i] = random(0.1, 0.2);
 	}
-	console.log(high)
 
 }
 
@@ -57,7 +56,6 @@ function draw(){
 	t += 0.005
 
   tm(1);
-	// console.log(x(t))
 }
 
 function stars() {
@@ -66,7 +64,6 @@ function stars() {
 		push()
 			var a = (map(y(t), 0, cy, 0, 1))
 			var color = ('rgba(255, 255, 255, ' + a +')')
-			// console.log(darkness)
 			fill(color)
 			noStroke();
 			ellipse(sAxis[i].x, sAxis[i].y, 1)
