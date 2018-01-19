@@ -1,10 +1,7 @@
 var cx, cy;
 var t = 0;
 var x, y;
-var rows, cols;
-var scl = 100;
 var sAxis = [];
-var gAxis = [];
 var lightness, darkness;
 
 var high = [];
@@ -21,9 +18,6 @@ function setup() {
 	cy = windowHeight;
 
 	canvas = createCanvas(cx, cy);
-
-	rows = cy/scl;
-	cols = cx/scl;
 
 	cs = cx>900 ? cx/6.4 : cy/5.6;
 
